@@ -1,0 +1,11 @@
+.main {
+  background-color: bisque;
+  width: 50vh;
+  height: 80vh;
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
