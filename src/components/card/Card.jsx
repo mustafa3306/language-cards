@@ -39,7 +39,7 @@ const Card = ({ name, img, options }) => {
              :
              <div onClick={()=> setIsClick(true)} className="second">
              {options.map((items)=>{
-                 return <li>{items}</li>
+                 return <ul><li>{items}</li></ul>
              })}
              </div>
             }
