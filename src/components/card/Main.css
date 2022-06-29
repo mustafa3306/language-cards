@@ -5,7 +5,7 @@
   font-family: "Special Elite", cursive;
   background-color: orange;
   width: 400px;
-  height: 660px;
+  height: 690px;
   margin: auto;
   border-radius: 2rem;
   font-size: 0.6rem;
@@ -21,4 +21,5 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.3rem;
 }

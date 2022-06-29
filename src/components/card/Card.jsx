@@ -3,14 +3,37 @@ import "./Card.css"
 
 const Card = ({ name, img, options }) => {
     const [isClick, setIsClick] = useState(true);
+    const [isHover, setIsHover] = useState(false);
+    
+    let resimim={
+        transform: ""
+        
+    }
+
+    let shadow={
+        boxShadow: ""
+    }
+
+    if(isHover){
+        resimim.transform="scale(1.2)"
+        shadow.boxShadow = "1px 1px 5px 5px #E488FF"
+    }
+    else{
+        resimim.transform=""
+        shadow.boxShadow=""
+    }
+
 
     return (
-        <div className="container">
+        <div style={shadow} className="container">
             {
                 isClick
                 ?
-                <div onClick={() => setIsClick(false)} className="first">
-                <img src={img} alt="" />
+                <div 
+                onMouseOver={() => setIsHover(true)} 
+                onMouseOut={() => setIsHover(false)} 
+                onClick={() => setIsClick(false)} className="first">
+                <img style={resimim} src={img} alt="" />
                 <h1>{name}</h1>
              </div>
              :

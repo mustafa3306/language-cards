@@ -3,7 +3,7 @@ import "./Header.css"
 
 const Header = () => {
   return (
-    <div>
+    <div className="ustkisim">
         <img src={img1} alt="" />
     </div>
   )
