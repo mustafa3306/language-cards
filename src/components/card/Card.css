@@ -12,7 +12,10 @@
 }
 
 .first img {
-  width: 70px;
+  margin-top: 0.3rem;
+  padding: 0.2rem;
+  transition: all 0.3s;
+  width: 65px;
 }
 
 /* .first h1 {
