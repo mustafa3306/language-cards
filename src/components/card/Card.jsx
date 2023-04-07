@@ -5,7 +5,7 @@ const Card = ({ name, img, options }) => {
     const [isClick, setIsClick] = useState(true);
     const [isHover, setIsHover] = useState(false);
     
-    let resimim={
+    let resmim={
         transform: ""
         
     }
@@ -15,11 +15,11 @@ const Card = ({ name, img, options }) => {
     }
 
     if(isHover){
-        resimim.transform="scale(1.2)"
+        resmim.transform="scale(1.2)"
         shadow.boxShadow = "1px 1px 5px 5px #E488FF"
     }
     else{
-        resimim.transform=""
+        resmim.transform=""
         shadow.boxShadow=""
     }
 
@@ -33,7 +33,7 @@ const Card = ({ name, img, options }) => {
                 onMouseOver={() => setIsHover(true)} 
                 onMouseOut={() => setIsHover(false)} 
                 onClick={() => setIsClick(false)} className="first">
-                <img style={resimim} src={img} alt="" />
+                <img style={resmim} src={img} alt="" />
                 <h1>{name}</h1>
              </div>
              :
